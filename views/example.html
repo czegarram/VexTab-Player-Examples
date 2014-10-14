@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Ejemplo 1</title><!-- Google Fonts -->
+    <link href="../css/support/bootstrap.min.css" rel="stylesheet"
+    type="text/css">
+</head>
+<body>
+    <div id="holder">
+        <div class="container">
+            <!-- Content -->
+
+            <div class="row-fluid">
+                <!-- Column 1 -->
+
+                <div class="span12">
+                    <div class="tabbable tabs-right" id="article-body">
+                        <noscript>&lt;h3&gt; Sorry! Javascript must be enabled
+                        to view the contents of this site.
+                        &lt;/h3&gt;</noscript> <!-- Tab Content -->
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
+                                <div class="wmd-panel wmd-preview" id=
+                                "wmd-preview">
+                                    <div id="editor">
+    vextab
+    options stave-distance=30 player=true
+    tabstave notation=true key=A time=4/4 tablature=false
+    notes :q C-E-G-A/4 | !octave-shift +1! C-E-G-A/4
+    text .font=Times-15-italic, :w, ,|8va
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Column 3 -->
+
+                </div><script src=
+                "../js/support/paper.min.js"></script>
+            </div>
+        </div><!-- Scripts -->
+        <script src="../js/support/jquery.min.js"></script> <!-- version 1.8 -->
+         <script src="../js/support/underscore-min.js"></script> <!-- VexFlow -->
+         <script src="../js/support/vexflow-min.js"></script>
+         <script src="../js/support/tabdiv-min.js"></script> <!-- App -->
+         <script src="../js/app-min.js"></script>
+         <script type="text/javascript">
+             $(function() {
+              notespace_setup();
+              $('.visible-on-load').show();
+              });
+        </script>
+    </div>
+</body>
+</html>

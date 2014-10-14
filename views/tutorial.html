@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Tutorial</title><!-- Google Fonts -->
+    <link href="../css/support/bootstrap.min.css" rel="stylesheet"
+    type="text/css">   
+</head>
+
+<body>
+    <div id="holder">
+        <div class="container">
+            <!-- Content -->
+
+            <div class="row-fluid">
+                <!-- Column 1 -->
+
+                <div class="span1">
+                    <!--
+    <div class="fb-like" data-href="http://my.vexflow.com/articles/53" data-send="false" data-layout="button_count" data-show-faces="false" data-font="lucida grande"></div>
+  -->
+                </div><!-- Column 2 -->
+
+                <div class="span9">
+                    <div class="tabbable tabs-right" id="article-body">
+                        <noscript>&lt;h3&gt; Sorry! Javascript must be enabled
+                        to view the contents of this site.
+                        &lt;/h3&gt;</noscript> <!-- Tab Content -->
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
+                                <div class="wmd-panel wmd-preview" id=
+                                "wmd-preview">
+                                    <h2>New in My VexFlow</h2>
+
+                                    <h2>Jan 27 2013</h2>
+
+                                    <h3>Playback Octave Shift</h3>
+
+                                    <p>You can use the new bang command syntax
+                                    <code>!</code> to change the playback
+                                    octave anywhere in the tune.</p>
+
+                                    <p>For example, <code>notes :q C-E-G-A/4 |
+                                    !octave-shift +1! C-E-G-A/4</code>
+                                    generates:</p>
+
+                                    <div class="vex-tabdiv visible-on-load"
+                                    style="position: relative;">
+                                        <canvas class="vex-canvas" height="139"
+                                        width="675"></canvas><canvas class=
+                                        "vextab-player" height="139" id=
+                                        "view-0" style=
+                                        "position: absolute; left: 0px; top: 0px;"
+                                        width="675"></canvas>
+
+                                        <p></p>
+
+                                        <div class="editor-error"></div>
+                                    </div>
+
+                                    <p>Note that the <em>8va</em> text was
+                                    generated with <code>text
+                                    .font=Times-15-italic, :w,
+                                    ,|8va</code>.</p>
+
+                                    <p>This is particularly useful in guitar
+                                    scores, where the music is notated one
+                                    octave higher than is played. Below is an
+                                    example with <code>!octave-shift
+                                    -2!</code>.</p>
+
+                                    <div class="vex-tabdiv visible-on-load"
+                                    style="position: relative;">
+                                        <canvas class="vex-canvas" height="198"
+                                        width="675"></canvas><canvas class=
+                                        "vextab-player" height="198" id=
+                                        "view-1" style=
+                                        "position: absolute; left: 0px; top: 0px;"
+                                        width="675"></canvas>
+
+                                        <p></p>
+
+                                        <div class="editor-error"></div>
+                                    </div>
+
+                                    <h3>More Playback Instruments</h3>
+
+                                    <p>The <code>instrument</code> option
+                                    supports the following new instruments:</p>
+
+                                    <ul>
+                                        <li><code>alto_sax</code></li>
+
+                                        <li><code>baritone_sax</code></li>
+
+                                        <li><code>tenor_sax</code></li>
+
+                                        <li><code>soprano_sax</code></li>
+
+                                        <li><code>trumpet</code></li>
+
+                                        <li><code>flute</code></li>
+
+                                        <li><code>brass_section</code></li>
+
+                                        <li><code>distortion_guitar</code></li>
+                                    </ul>
+
+                                    <p>Here's a brass section:</p>
+
+                                    <div class="vex-tabdiv visible-on-load"
+                                    style="position: relative;">
+                                        <canvas class="vex-canvas" height="369"
+                                        width="675"></canvas><canvas class=
+                                        "vextab-player" height="369" id=
+                                        "view-2" style=
+                                        "position: absolute; left: 0px; top: 0px;"
+                                        width="675"></canvas>
+
+                                        <p></p>
+
+                                        <div class="editor-error"></div>
+                                    </div>
+
+                                    <h3>Mixed Tuplets</h3>
+
+                                    <p>You can mix notes of various lengths
+                                    inside a tuplet, like so:</p>
+
+                                    <div class="vex-tabdiv visible-on-load"
+                                    style="position: relative;">
+                                        <canvas class="vex-canvas" height="117"
+                                        width="675"></canvas>
+
+                                        <p></p>
+
+                                        <div class="editor-error"></div>
+                                    </div>
+
+                                    <p>The syntax for mixed tuplets is
+                                    <code>^T,N^</code>, where <code>T</code> is
+                                    the tuplet type, and <code>N</code> is the
+                                    number of notes in the tuplet. The first
+                                    two tuplets above were generated with
+                                    <code>^3,2^</code>.</p>
+
+                                    <h2>Jan 22 2013</h2>
+
+                                    <h3>Multiple Playback Instruments</h3>
+
+                                    <p>You can set the <code>instrument</code>
+                                    option to one of the below values to change
+                                    the playback instrument:</p>
+
+                                    <ul>
+                                        <li>
+                                        <code>acoustic_grand_piano</code></li>
+
+                                        <li>
+                                        <code>acoustic_guitar_nylon</code></li>
+
+                                        <li>
+                                        <code>acoustic_guitar_steel</code></li>
+
+                                        <li>
+                                        <code>electric_guitar_jazz</code></li>
+
+                                        <li>
+                                        <code>electric_bass_finger</code></li>
+
+                                        <li>
+                                        <code>electric_bass_pick</code></li>
+
+                                        <li><code>synth_drum</code></li>
+                                    </ul>
+
+                                    <p>Here's a beat from an eighties cop
+                                    show.</p>
+
+                                    <div class="vex-tabdiv visible-on-load"
+                                    style="position: relative;">
+                                        <canvas class="vex-canvas" height="189"
+                                        width="675"></canvas><canvas class=
+                                        "vextab-player" height="189" id=
+                                        "view-3" style=
+                                        "position: absolute; left: 0px; top: 0px;"
+                                        width="675"></canvas>
+
+                                        <p></p>
+
+                                        <div class="editor-error"></div>
+                                    </div>
+
+                                    <h3>Alternative Accidental Strategies</h3>
+
+                                    <p>The new <code>accidentals</code> option
+                                    has support for two strategies:</p>
+
+                                    <ul>
+                                        <li><code>standard</code>: Default
+                                        strategy of displaying and cancelling
+                                        accidentals based on key
+                                        signature.</li>
+
+                                        <li><code>cautionary</code>: Displays
+                                        implied accidentals in
+                                        parenthesis.</li>
+                                    </ul>
+
+                                    <p><strong>Standard Strategy</strong></p>
+
+                                    <div class="vex-tabdiv visible-on-load"
+                                    style="position: relative;">
+                                        <canvas class="vex-canvas" height="238"
+                                        width="675"></canvas><canvas class=
+                                        "vextab-player" height="238" id=
+                                        "view-4" style=
+                                        "position: absolute; left: 0px; top: 0px;"
+                                        width="675"></canvas>
+
+                                        <p></p>
+
+                                        <div class="editor-error"></div>
+                                    </div>
+
+                                    <p><strong>Cautionary Strategy</strong></p>
+
+                                    <div class="vex-tabdiv visible-on-load"
+                                    style="position: relative;">
+                                        <canvas class="vex-canvas" height="238"
+                                        width="675"></canvas><canvas class=
+                                        "vextab-player" height="238" id=
+                                        "view-5" style=
+                                        "position: absolute; left: 0px; top: 0px;"
+                                        width="675"></canvas>
+
+                                        <p></p>
+
+                                        <div class="editor-error"></div>
+                                    </div>
+
+                                    <p>If you're using
+                                    <code>key</code>/<code>octave</code> syntax
+                                    (instead of the guitar-based
+                                    <code>fret</code>/<code>string</code>
+                                    syntax), you can suffix your accidental
+                                    with a <code>~</code> to render it in
+                                    parenthesis, e.g., <code>A#/4</code> has no
+                                    parenthesis, <code>A#~/4</code> has
+                                    parenthesis.</p>
+
+                                    <h2>Jan 17 2013</h2>
+
+                                    <h3>Fret Hand Fingering and String
+                                    Numbers</h3>
+
+                                    <p>More love for classical
+                                    instrumentalists. You can annotate your
+                                    standard notation with string numbers and
+                                    fret hand fingers using the
+                                    <code>$.fingering</code> annotation. This
+                                    is particularly useful for multi-voice
+                                    notation.</p>
+
+                                    <div class="vex-tabdiv visible-on-load"
+                                    style="position: relative;">
+                                        <canvas class="vex-canvas" height="216"
+                                        width="675"></canvas><canvas class=
+                                        "vextab-player" height="216" id=
+                                        "view-6" style=
+                                        "position: absolute; left: 0px; top: 0px;"
+                                        width="675"></canvas>
+
+                                        <p></p>
+
+                                        <div class="editor-error"></div>
+                                    </div>
+
+                                    <p>The <code>fingering</code> annotation
+                                    takes four parameters separated by colons
+                                    (<code>:</code>):</p>
+
+                                    <ul>
+                                        <li>Note number (The specific note
+                                        number in the chord from bottom to
+                                        top.)</li>
+
+                                        <li>Annotation position: <code>a</code>
+                                        (Above), <code>b</code> (Below),
+                                        <code>l</code> (Left), or
+                                        <code>r</code> (Right)</li>
+
+                                        <li><code>f</code> (Fret) or
+                                        <code>s</code> (String)</li>
+
+                                        <li>a number to represent the fret or
+                                        string.</li>
+                                    </ul>
+
+                                    <p>For example <code>notes
+                                    (E/4.G/4.C/5.E/5)
+                                    $.fingering/4:r:f:2.$</code> adds a
+                                    fingering annotation (<code>f</code>) to
+                                    the fourth note (<code>4</code> which is
+                                    the <code>E</code>). The annotation
+                                    displays the number <code>2</code>. You can
+                                    add multiple fingerings to a note or chord
+                                    by separating them with dashes
+                                    <code>-</code>. (Click the
+                                    <code>Edit</code> tab on the right to see
+                                    some examples of this.)</p>
+
+                                    <h2>Jan 15 2013</h2>
+
+                                    <h3>Playback Your Music!</h3>
+
+                                    <p>Add <code>options player=true</code> to
+                                    the beginning of your notation to add play
+                                    and stop buttons. Then click play!</p>
+
+                                    <div class="vex-tabdiv visible-on-load"
+                                    style="position: relative;">
+                                        <canvas class="vex-canvas" height="112"
+                                        width="675"></canvas><canvas class=
+                                        "vextab-player" height="112" id=
+                                        "view-7" style=
+                                        "position: absolute; left: 0px; top: 0px;"
+                                        width="675"></canvas>
+
+                                        <p></p>
+
+                                        <div class="editor-error"></div>
+                                    </div>
+
+                                    <p>You can set the tempo with the
+                                    <code>tempo</code> option. For example:</p>
+                                    <pre>
+                                    <code>    vextab
+                                        options player=true tempo=140
+                                        tabstave notation=true tablature=false time=4/4
+                                        notes :q (C/4.E/4.G/4) D-E-F/4
+                                    </code>
+                                    </pre>
+
+                                    <p>Note that there are still a few timing
+                                    and lag issues due to the way playback is
+                                    implemented. We are working on more robust
+                                    playback support.</p>
+
+                                    <p>Playback works even when embedded into
+                                    your own site. See <a href=
+                                    "http://0xfe.blogspot.ca/2013/01/hear-your-music.html">
+                                    this blogpost</a> for a demo of an embedded
+                                    player.</p>
+
+                                    <h3>Add Sweep, Brush, or Rasquedo
+                                    Strokes</h3>
+
+                                    <p>With the <code>$.stroke/TYPE.$</code>
+                                    annotation, you can now notate different
+                                    types of right hand strokes. The value for
+                                    <code>TYPE</code> can be <code>qu</code>,
+                                    <code>qd</code>, <code>bu</code>,
+                                    <code>bd</code>, <code>ru</code>,
+                                    <code>rd</code>, for rasquedo up/down,
+                                    brush up/down, or roll up/down
+                                    respectively.</p>
+
+                                    <div class="vex-tabdiv visible-on-load"
+                                    style="position: relative;">
+                                        <canvas class="vex-canvas" height="270"
+                                        width="675"></canvas>
+
+                                        <p></p>
+
+                                        <div class="editor-error"></div>
+                                    </div>
+
+                                    <p>The values for <code>TYPE</code>
+                                    are:</p>
+
+                                    <h3>Multiple Voices</h3>
+
+                                    <p>You can now render notation with
+                                    multiple voices. Use the <code>voice</code>
+                                    command to create a new voice, without
+                                    creating a new stave.</p>
+
+                                    <div class="vex-tabdiv visible-on-load"
+                                    style="position: relative;">
+                                        <canvas class="vex-canvas" height="274"
+                                        width="675"></canvas><canvas class=
+                                        "vextab-player" height="274" id=
+                                        "view-8" style=
+                                        "position: absolute; left: 0px; top: 0px;"
+                                        width="675"></canvas>
+
+                                        <p></p>
+
+                                        <div class="editor-error"></div>
+                                    </div>
+
+<div id="editor">## New in My VexFlow
+
+## Jan 27 2013
+
+### Playback Octave Shift
+
+You can use the new bang command syntax `!` to change the playback octave anywhere in the tune.
+
+For example, `notes :q C-E-G-A/4 | !octave-shift +1! C-E-G-A/4` generates:
+
+    vextab
+    options stave-distance=30 player=true
+    tabstave notation=true key=A time=4/4 tablature=false
+    notes :q C-E-G-A/4 | !octave-shift +1! C-E-G-A/4
+    text .font=Times-15-italic, :w, ,|8va
+
+Note that the *8va* text was generated with `text .font=Times-15-italic, :w, ,|8va`.
+
+This is particularly useful in guitar scores, where the music is notated one octave higher than is played. Below is an example with `!octave-shift -2!`.
+
+    vextab
+    options space=30 player=true instrument=acoustic_guitar_nylon tempo=90
+    tabstave notation=true tablature=false key=G time=4/4
+    voice
+        notes |
+        notes !octave-shift -2!
+        notes E-E-E/5 ^3^ E-E-E/5 ^3^ |
+        notes E-E-E/5 ^3^ E-E-E/5 ^3^
+    voice
+        notes |
+        notes E/3-E/4-B/3-B/4 |  E/3-E/4-B/3-B/4 =|=
+    text .font=Times-15-italic, .16, :w, |8vb
+    options space=50
+
+### More Playback Instruments
+
+The `instrument` option supports the following new instruments:
+
+* `alto_sax`
+* `baritone_sax`
+* `tenor_sax`
+* `soprano_sax`
+* `trumpet`
+* `flute`
+* `brass_section`
+* `distortion_guitar`
+
+Here's a brass section:
+
+    vextab
+    options stave-distance=30 player=true instrument=brass_section tempo=60
+    options space=20
+    tabstave notation=true key=G time=4/4 tablature=false
+    voice
+      notes :q (G/4.B/4.D/4.G/5) (G/4.B/4.D/4.F/5) (C/4.E/4.G/4) (C/4.E@/4.G/4)
+    voice
+      notes :h G/3 C/3
+    text .-2, .font=Arial-14-, :q, G, G7, C, Cm
+    options space=40
+
+    tabstave notation=true key=G time=4/4 tablature=false
+    voice
+      notes :q (G/4.B/4.D/4) (D/4.F#/4.C/4) :h (G/4.B/4.D/4)
+    voice
+      notes :q B/3 A/3 :h G/2
+    text .font=Arial-14-, :q, G, D7, G
+    options space=30
+
+### Mixed Tuplets
+
+You can mix notes of various lengths inside a tuplet, like so:
+
+    vextab
+    tabstave notation=true tablature=false key=G time=4/4
+    notes :q E/5 :8 E/5 ^3,2^ :8 E/5 :q E/5 ^3,2^
+    notes :8 E-E-E/5 ^3^ ## E-E/5 ^3^
+
+    options space=20
+
+The syntax for mixed tuplets is `^T,N^`, where `T` is the tuplet type, and `N` is the number of notes in the tuplet. The first two tuplets above were generated with `^3,2^`.
+
+## Jan 22 2013
+
+### Multiple Playback Instruments
+
+You can set the `instrument` option to one of the below values to change the playback instrument:
+
+* `acoustic_grand_piano`
+* `acoustic_guitar_nylon`
+* `acoustic_guitar_steel`
+* `electric_guitar_jazz`
+* `electric_bass_finger`
+* `electric_bass_pick`
+* `synth_drum`
+
+Here's a beat from an eighties cop show.
+
+    vextab
+    options player=true tempo=120 instrument=synth_drum space=30
+    tabstave notation=true tablature=false
+    voice
+      notes :8 #9# :16 E/5 :8d #9# :16 E/5 :8d #9# :16 E/5 #9# :q E/5
+    voice
+      notes :16 C-C#/4 #0# D#/4 E-F/4 #0# G/4 G#-A/4 #0# B/4 :q E/4
+    options space=40
+
+
+### Alternative Accidental Strategies
+
+The new `accidentals` option has support for two strategies:
+
+* `standard`: Default strategy of displaying and cancelling accidentals based on key signature.
+* `cautionary`: Displays implied accidentals in parenthesis.
+
+**Standard Strategy**
+
+    vextab
+    options player=true tempo=80
+    tabstave notation=true key=G time=4/4
+    notes :8 5-5-6-6-5-5-3-3/3
+
+**Cautionary Strategy**
+
+    vextab
+    options player=true tempo=80 accidentals=cautionary
+    tabstave notation=true key=G time=4/4
+    notes :8 5-5-6-6-5-5-3-3/3
+
+If you're using `key`/`octave` syntax (instead of the guitar-based `fret`/`string` syntax), you can suffix your accidental with a `~` to render it in parenthesis, e.g., `A#/4` has no parenthesis, `A#~/4` has parenthesis.
+
+## Jan 17 2013
+
+### Fret Hand Fingering and String Numbers
+
+More love for classical instrumentalists. You can annotate your standard notation with string numbers and fret hand fingers using the `$.fingering` annotation. This is particularly useful for multi-voice notation.
+
+    vextab
+    options space=40 player=true tempo=80 instrument=acoustic_guitar_nylon
+    tabstave notation=true tablature=false key=G time=4/4
+    voice
+        notes !octave-shift -1!
+        notes :8 ## (D/4.G/4.D/5.G/5)
+        notes $.fingering/4:r:f:4-3:r:f:3.$
+        notes $.fingering/4:l:s:1-3:r:s:2.$
+
+        notes :h (E/4.G/4.C/5.E/5)
+        notes $.fingering/1:r:f:2-3:r:f:1.$
+        notes $.fingering/1:l:s:4-3:r:s:2.$
+        notes :q ##
+    voice
+        notes :8 G/3 $.fingering/1:r:f:2-1:r:s:6.$
+        notes :8 F/3 $.fingering/1:r:f:1-1:r:s:6.$
+        notes :q G/3 $.fingering/1:r:f:2-1:r:s:6.$
+        notes :q G/3 $.fingering/1:r:f:2-1:r:s:6.$
+        notes :q G/3 $.fingering/1:r:f:2-1:r:s:6.$
+
+    text .font=Arial-14-Bold,.-2
+    text :8,G,G/F,:h,Am/G
+
+    options space=60
+
+The `fingering` annotation takes four parameters separated by colons (`:`):
+
+* Note number (The specific note number in the chord from bottom to top.)
+* Annotation position: `a` (Above), `b` (Below), `l` (Left), or `r` (Right)
+* `f` (Fret) or `s` (String)
+* a number to represent the fret or string.
+
+For example `notes (E/4.G/4.C/5.E/5) $.fingering/4:r:f:2.$` adds a fingering annotation (`f`) to the fourth note (`4` which is the `E`). The annotation displays the number `2`. You can add multiple fingerings to a note or chord by separating them with dashes `-`. (Click the `Edit` tab on the right to see some examples of this.)
+
+## Jan 15 2013
+
+### Playback Your Music!
+
+Add `options player=true` to the beginning of your notation to add play and stop buttons. Then click play!
+
+    vextab
+    options player=true tempo=140
+    tabstave notation=true tablature=false time=4/4
+    notes :q (C/4.E/4.G/4) D-E-F/4 | :8 G-A-B/4 C/5
+    notes :q ## (C/4.G/4.B/4)
+
+You can set the tempo with the `tempo` option. For example:
+
+        vextab
+        options player=true tempo=140
+        tabstave notation=true tablature=false time=4/4
+        notes :q (C/4.E/4.G/4) D-E-F/4
+
+Note that there are still a few timing and lag issues due to the way playback is implemented. We are working on more robust playback support.
+
+Playback works even when embedded into your own site. See [this blogpost](http://0xfe.blogspot.ca/2013/01/hear-your-music.html) for a demo of an embedded player.
+
+### Add Sweep, Brush, or Rasquedo Strokes
+
+With the `$.stroke/TYPE.$` annotation, you can now notate different types of right hand strokes. The value for `TYPE` can be `qu`, `qd`, `bu`, `bd`, `ru`, `rd`, for rasquedo up/down, brush up/down, or roll up/down respectively.
+
+    vextab
+    options space=50
+    tabstave notation=true time=4/4
+    notes :q (5/6.7/5.7/4.5/3.5/2.5/1) $.stroke/qu.$ $qu$
+    notes :q (5/6.7/5.7/4.5/3.5/2.5/1) $.stroke/qd.$ $qd$
+    notes :q (5/6.7/5.7/4.5/3.5/2.5/1) $.stroke/ru.$ $ru$
+    notes :q (5/6.7/5.7/4.5/3.5/2.5/1) $.stroke/rd.$ $rd$ |
+    notes :h (5/6.7/5.7/4.5/3.5/2.5/1) $.stroke/bu.$ $bu$
+    notes :h (5/6.7/5.7/4.5/3.5/2.5/1) $.stroke/bd.$ $bd$
+    text .font=Arial-14-,.-3,Am
+
+The values for `TYPE` are:
+
+### Multiple Voices
+
+You can now render notation with multiple voices. Use the `voice` command to create a new voice, without creating a new stave.
+
+    vextab
+    options stave-distance=30 space=10 player=true
+    tabstave notation=true
+             key=A
+             time=4/4
+      voice
+        notes :q (5/2.5/3.7/4) :8 7p5h6/3 ^3^ 5h6h7/5 ^3^ :q 7V/4 |
+        notes :8 t12p7/4 s5s3/4 :8 3s:16:5-7/5 :q p5/4
+      voice
+        notes :h 5/6 :q  5/6 :8 3-5/6 | :w 5/5
+
+###Finish</div>
+
+                                    <div style="padding-top:10px;">
+                                        <a class="btn" href=
+                                        "/articles/53">Cancel</a> <a class=
+                                        "label label-warning" href="#" id=
+                                        "article-updated" style=
+                                        "display: none;">Preview Updated</a>
+                                        <a class="btn btn-primary pull-right"
+                                        href="#" id="update-article" style=
+                                        "display:none;">Save</a>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="tab3"></div>
+                            </div>
+                        </div>
+                    </div><!-- Column 3 -->
+
+                    <div class="span2">
+                        <div class="tabbable tabs-right">
+                            <!-- Tab menus -->
+
+                            <ul class="nav nav-tabs" id="edit-menu" style=
+                            "display:none;">
+                                <li class="active">
+                                    <a data-toggle="tab" href="#tab1" id=
+                                    "preview-tab"><i class=
+                                    "icon-circle-arrow-left"></i> Preview</a>
+                                </li>
+
+                                <li>
+                                    <a data-toggle="tab" href="#tab2" id=
+                                    "editor-tab"><i class="icon-pencil"></i>
+                                    Edit</a>
+                                </li>
+
+                                <li>
+                                    <a data-toggle="tab" href="#tab3"><i class=
+                                    "icon-question-sign"></i> Help</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><script src=
+                "../js/support/paper.min.js"></script>
+            </div>
+        </div><!-- Scripts -->
+        <script src="../js/support/jquery.min.js"></script> <!-- version 1.8 -->
+        <script src="../js/support/underscore-min.js"></script> <!-- VexFlow -->
+        <script src="../js/support/vexflow-min.js"></script>
+        <script src="../js/support/tabdiv-min.js"></script> <!-- App -->
+        <script src="../js/app-min.js"></script>
+        <script type="text/javascript">
+          $(function() {
+          notespace_setup();
+          $('.visible-on-load').show();
+          });
+        </script>
+    </div>
+</body>
+</html>
